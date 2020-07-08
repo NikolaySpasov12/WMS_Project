@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:id = "@+id/TransportOrderDetails"
+	android:background="@color/formDefectGoodsBackColor">
+	<include
+		android:layout_marginTop="3dp"
+		layout="@layout/HintField" /> 
+
+	<LinearLayout
+		android:orientation ="vertical"
+		android:layout_weight="4"
+		android:layout_height="0px"
+		android:layout_width="match_parent"
+		>
+	<include
+		android:layout_marginTop="3dp"
+		layout="@layout/ScanField" /> 
+		
+
+	<LinearLayout
+		android:orientation ="vertical"
+		android:layout_weight="8"
+		android:layout_height="0px"
+		android:layout_width="match_parent"
+		>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_weight="1"
+			android:layout_width="match_parent"
+			android:layout_height = "0dp">
+				<TextView
+					android:layout_weight="1"
+					android:layout_height="match_parent"
+					android:layout_width="0px"
+					android:text ="@string/sourceBin"
+					android:gravity="center|left"
+					android:textColor = "@color/black"
+					android:paddingLeft="20px"
+					android:textAppearance="?android:textAppearanceMedium" 
+			/>
+				<TextView
+					android:layout_weight="2"
+					android:layout_height="match_parent"
+					android:layout_width="0px"
+					android:gravity="center|left"
+					android:textColor = "@color/black"
+					android:id="@+id/quelleTextViewTOD"
+					android:textAppearance="?android:textAppearanceMedium"
+					android:paddingLeft="40px" 
+			/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_weight="1"
+			android:layout_width="match_parent"
+			android:layout_height = "0dp">
+				<TextView
+					android:layout_weight="1"
+					android:layout_height="match_parent"
+					android:layout_width="0px"
+					android:text ="@string/leNummer1"
+					android:gravity="center|left"
+					android:textColor = "@color/black"
+					android:paddingLeft="20px"
+					android:textAppearance="?android:textAppearanceMedium" 
+			/>
+				<TextView
+					android:layout_weight="2"
+					android:layout_height="match_parent"
+					android:layout_width="0px"
+					android:gravity="center|left"
+					android:textColor = "@color/black"
+					android:id="@+id/LETextViewTOD"
+					android:textAppearance="?android:textAppearanceMedium"
+					android:paddingLeft="40px" 
+			/>
+			</LinearLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_weight="1"
+			android:id="@+id/secondLeNumTOD"
+			android:visibility="gone"
+			android:layout_width="match_parent"
+			android:layout_height = "0dp">
+				<TextView
+					android:layout_weight="1"
+					android:layout_height="match_parent"
+					android:layout_width="0px"
+					android:text ="@string/leNummer2"
+					android:gravity="center|left"
+					android:textColor = "@color/black"
+					android:paddingLeft="20px"
+					android:textAppearance="?android:textAppearanceMedium" 
+			/>
+				<TextView
+					android:layout_weight="2"
+					android:layout_height="match_parent"
+					android:layout_width="0px"
+					android:gravity="center|left"
+					android:textColor = "@color/black"
+					android:id="@+id/LE2TextViewTOD"
+					android:textAppearance="?android:textAppearanceMedium"
+					android:paddingLeft="40px" 
+			/>
+			</LinearLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_weight="1"
+			android:layout_width="match_parent"
+			android:layout_height = "0dp">
+				<TextView
+					android:layout_weight="1"
+					android:layout_height="match_parent"
+					android:layout_width="0px"
+					android:text ="@string/leTyp"
+					android:gravity="center|left"
+					android:textColor = "@color/black"
+					android:paddingLeft="20px"
+					android:textAppearance="?android:textAppearanceMedium" 
+			/>
+				<TextView
+					android:layout_weight="2"
+					android:layout_height="match_parent"
+					android:layout_width="0px"
+					android:gravity="center|left"
+					android:textColor = "@color/black"
+					android:id="@+id/leTypTextViewTOD"
+					android:textAppearance="?android:textAppearanceMedium"
+					android:paddingLeft="40px" 
+			/>
+			</LinearLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_weight="1"
+			android:layout_width="match_parent"
+			android:layout_height = "0dp">
+				<TextView
+					android:layout_weight="1"
+					android:layout_height="match_parent"
+					android:layout_width="0px"
+					android:text ="@string/prio"
+					android:gravity="center|left"
+					android:textColor = "@color/black"
+					android:paddingLeft="20px"
+					android:textAppearance="?android:textAppearanceMedium" 
+			/>
+				<TextView
+					android:layout_weight="2"
+					android:layout_height="match_parent"
+					android:layout_width="0px"
+					android:gravity="center|left"
+					android:textColor = "@color/black"
+					android:id="@+id/prioTextViewTOD"
+					android:textAppearance="?android:textAppearanceMedium"
+					android:paddingLeft="40px" 
+			/>
+			</LinearLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_weight="1"
+			android:layout_width="match_parent"
+			android:layout_height = "0dp">
+				<TextView
+					android:layout_weight="1"
+					android:layout_height="match_parent"
+					android:layout_width="0px"
+					android:text ="@string/targetBin"
+					android:gravity="center|left"
+					android:textColor = "@color/black"
+					android:paddingLeft="20px"
+					android:textAppearance="?android:textAppearanceMedium" 
+			/>
+				<TextView
+					android:layout_weight="2"
+					android:layout_height="match_parent"
+					android:layout_width="0px"
+					android:gravity="center|left"
+					android:textColor = "@color/black"
+					android:id="@+id/zielTextViewTOD"
+					android:textAppearance="?android:textAppearanceMedium"
+					android:paddingLeft="40px" 
+			/>
+			</LinearLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_weight="1"
+			android:layout_width="match_parent"
+			android:layout_height = "0dp">
+				<TextView
+					android:layout_weight="1"
+					android:layout_height="match_parent"
+					android:layout_width="0px"
+					android:text ="@string/gevicht"
+					android:gravity="center|left"
+					android:textColor = "@color/black"
+					android:id="@+id/gweichtLabelTextView"
+					android:paddingLeft="20px"
+					android:textAppearance="?android:textAppearanceMedium" 
+			/>
+				<TextView
+					android:layout_weight="2"
+					android:layout_height="match_parent"
+					android:layout_width="0px"
+					android:gravity="center|left"
+					android:textColor = "@color/black"
+					android:id="@+id/gewichtTextViewTOD"
+					android:textAppearance="?android:textAppearanceMedium"
+					android:paddingLeft="40px" 
+			/>
+		</LinearLayout>
+   </LinearLayout>
+	<include
+		layout="@layout/ActPanel6btn"
+			android:background="@color/inv_crimson"	/>
+	</LinearLayout>
+</LinearLayout>

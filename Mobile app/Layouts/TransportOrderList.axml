@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/formDefectGoodsBackColor">
+
+	<LinearLayout
+		android:orientation ="vertical"
+		android:layout_weight="6"
+		android:layout_height="0px"
+		android:layout_width="match_parent"	>
+	<include
+		android:layout_marginTop="3dp"
+		layout="@layout/HintField" /> 
+	<TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/headerColumn1"
+                android:layout_column="0"
+                android:layout_width="0dp"
+                android:layout_weight=".3"
+                android:gravity="center"
+				android:layout_height = "match_parent"
+					android:textColor="@color/material_grey_50"
+                android:text="@string/number"
+                android:textSize="@dimen/gridColumnTextSize"
+                android:background="@android:color/black" />
+            <TextView
+                android:id="@+id/headerColumn2"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:gravity="center"
+				android:layout_height = "match_parent"
+					android:textColor="@color/material_grey_50"
+                android:text="@string/leTyp"
+                android:textSize="@dimen/gridColumnTextSize"
+                android:background="@android:color/black" />            
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/headerColumn4"
+                android:layout_column="0"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+				android:layout_height = "match_parent"
+                android:gravity="center"
+					android:textColor="@color/material_grey_50"
+                android:text="@string/from"
+                android:textSize="@dimen/gridColumnTextSize"
+                android:background="@android:color/black" />
+            <TextView
+                android:text="@string/to"
+                android:id="@+id/headerColumn5"
+                android:gravity="center"
+                android:layout_width="0dp"
+				android:layout_height = "match_parent"
+                android:layout_weight=".4"
+					android:textColor="@color/material_grey_50"
+                android:textSize="@dimen/gridColumnTextSize"
+                android:background="@android:color/black" />
+			<TextView
+                android:id="@+id/headerColumn3"
+                android:layout_width="0dp"
+                android:layout_weight=".3"
+                android:gravity="center"
+					android:textColor="@color/material_grey_50"
+				android:layout_height = "match_parent"
+                android:text="@string/prio"
+                android:textSize="@dimen/gridColumnTextSize"
+                android:background="@android:color/black" />
+        </TableRow>
+    </TableLayout>
+			<ListView
+			    android:id="@+id/listViewTrans"
+			    android:layout_width="match_parent"
+			    android:layout_weight="1"
+			    android:layout_height="0dp"
+			    android:listSelector="@drawable/ListViewRowSelector">
+			</ListView>
+	</LinearLayout>
+	<include
+        layout="@layout/ActPanel3btn"
+        android:background="@color/inv_crimson"	/>
+
+	<!--TextView
+		android:layout_weight = "1"
+		android:layout_width="match_parent"
+		android:layout_height = "0px"
+		android:background = "@color/inv_rowBackgroundYellow"
+		android:textColor = "@color/red"
+		android:layout_margin = "4dp"
+		android:id="@+id/hintTextViewTOL"
+		android:gravity = "center"
+		android:textAppearance="?android:textAppearanceMedium"/-->
+</LinearLayout>

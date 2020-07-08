@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Class="ResponsiveLayout.StackLayoutPageXaml"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:fitsSystemWindows="true">
+    <TextView
+        android:id="@+id/loginUser"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginBottom="@dimen/pageTitleMarginTop"
+        android:layout_marginTop="@dimen/pageTitleMarginTop"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:textSize="16dip"
+        android:textColor="@color/black" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+    <!-- ROW 1 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="@string/menuBtnWEPutAway"
+                android:id="@+id/buttonWEEinlagerung"
+                android:layout_width="@dimen/mainMenuButton_Width"
+                android:layout_height="@dimen/mainMenuButton_Heigth"
+                android:layout_gravity="fill_vertical"
+                android:textColor="@color/mainMenuBtnTextColor"
+                android:background="@drawable/btnPutAway"
+                android:layout_column="0" />
+            <Button
+                android:text="@string/menuBtnTransport"
+                android:id="@+id/buttonTransport"
+                android:layout_width="@dimen/mainMenuButton_Width"
+                android:layout_height="@dimen/mainMenuButton_Heigth"
+                android:layout_gravity="fill_vertical"
+                android:textColor="@color/mainMenuBtnTextColor"
+                android:background="@drawable/btnDefectGoods"
+                android:layout_column="1" />
+        </TableRow>
+    <!-- ROW 2 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/buttonPick"
+                android:layout_column="0"
+                android:layout_height="@dimen/mainMenuButton_Heigth"
+                android:layout_width="@dimen/mainMenuButton_Width"
+                android:layout_gravity="fill_vertical"
+                android:textColor="@color/mainMenuBtnTextColor"
+                android:background="@drawable/btnPick"
+                android:text="@string/menuBtnPick" />
+			<Button
+                android:text="@string/menuBtnGoodsReceipt"
+                android:id="@+id/buttonStoreProduction"
+                android:layout_width="@dimen/mainMenuButton_Width"
+                android:layout_height="@dimen/mainMenuButton_Heigth"
+                android:layout_gravity="fill_vertical"
+                android:textColor="@color/mainMenuBtnTextColor"
+                android:background="@drawable/btnreplwithwagon"
+                android:layout_column="1" />
+        </TableRow>
+    <!-- ROW 3 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="@string/menuBtnReallocation"
+                android:id="@+id/buttonReallocation"
+                android:layout_width="@dimen/mainMenuButton_Width"
+                android:layout_height="@dimen/mainMenuButton_Heigth"
+                android:layout_gravity="fill_vertical"
+                android:textColor="@color/mainMenuBtnTextColor"
+                android:background="@drawable/btnReallocation"
+                android:layout_column="0" />
+            <Button
+                android:text="@string/menuBtnInventory"
+                android:id="@+id/buttonInventory"
+                android:layout_width="@dimen/mainMenuButton_Width"
+                android:layout_height="@dimen/mainMenuButton_Heigth"
+                android:layout_gravity="fill_vertical"
+                android:textColor="@color/mainMenuBtnTextColor"
+                android:background="@drawable/btnInventory"
+                android:layout_column="1" />
+        </TableRow>
+    <!-- ROW 4 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="@string/menuBtnGoodsReceipt"
+                android:id="@+id/buttonGoodsReceipt"
+                android:layout_width="@dimen/mainMenuButton_Width"
+                android:layout_height="@dimen/mainMenuButton_Heigth"
+                android:layout_gravity="fill_vertical"
+                android:textColor="@color/mainMenuBtnTextColor"
+                android:background="@drawable/btnGoodsReceipt"
+                android:layout_column="0" />
+            <Button
+                android:text="@string/menuBtnPrintLabels"
+                android:id="@+id/buttonPrintLabels"
+                android:layout_width="@dimen/mainMenuButton_Width"
+                android:layout_height="@dimen/mainMenuButton_Heigth"
+                android:layout_gravity="fill_vertical"
+                android:textColor="@color/mainMenuBtnTextColor"
+                android:background="@drawable/btnPrintLabels"
+                android:layout_column="1" />
+        </TableRow>
+    <!-- ROW 5 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+			<Button
+                android:text="@string/menuBtnInitialStockTaking"
+                android:id="@+id/buttonInitialStocktaking"
+                android:layout_width="@dimen/mainMenuButton_Width"
+                android:layout_height="@dimen/mainMenuButton_Heigth"
+                android:layout_gravity="fill_vertical"
+                android:textColor="@color/mainMenuBtnTextColor"
+                android:background="@drawable/btnPrintLabels"
+                android:layout_column="0" />
+			<Button
+                android:text="@string/menuBtnInfo"
+                android:id="@+id/buttonInfo"
+                android:layout_width="@dimen/mainMenuButton_Width"
+                android:layout_height="@dimen/mainMenuButton_Heigth"
+                android:layout_gravity="fill_vertical"
+                android:textColor="@color/mainMenuBtnTextColor"
+                android:background="@drawable/btnInfo"
+                android:layout_column="1" />
+        </TableRow>
+		<!-- ROW 6 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+			<Button
+				android:text="@string/menuBtnGoodsReceipt"
+				android:id="@+id/buttonWeHandelsware"
+				android:layout_width="@dimen/mainMenuButton_Width"
+				android:layout_height="@dimen/mainMenuButton_Heigth"
+				android:layout_gravity="fill_vertical"
+				android:textColor="@color/mainMenuBtnTextColor"
+				android:background="@drawable/btnWeHandelsware"
+				android:layout_column="0" />
+            <Button
+                android:text="@string/menuBtnSplitTU"
+                android:id="@+id/buttonSplitTU"
+                android:layout_width="@dimen/mainMenuButton_Width"
+                android:layout_height="@dimen/mainMenuButton_Heigth"
+                android:layout_gravity="fill_vertical"
+                android:textColor="@color/mainMenuBtnTextColor"
+                android:background="@drawable/btnReallocation"
+                android:layout_column="1" />
+        </TableRow>
+		<!-- ROW 7 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="@string/menuBtnRepack"
+                android:id="@+id/buttonRepack"
+                android:layout_width="@dimen/mainMenuButton_Width"
+                android:layout_height="@dimen/mainMenuButton_Heigth"
+                android:layout_gravity="fill_vertical"
+                android:textColor="@color/mainMenuBtnTextColor"
+                android:background="@drawable/btnRepack"
+                android:layout_column="0" />
+            <Button
+                android:text="@string/menuBtnDeleteTU"
+                android:id="@+id/buttonDeleteTU"
+                android:layout_width="@dimen/mainMenuButton_Width"
+                android:layout_height="@dimen/mainMenuButton_Heigth"
+                android:layout_gravity="fill_vertical"
+                android:textColor="@color/mainMenuBtnTextColor"
+                android:background="@drawable/btngoodsreceipt"
+                android:layout_column="1" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
